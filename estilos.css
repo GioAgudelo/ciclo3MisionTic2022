@@ -1,41 +1,112 @@
-#nav_bar{
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+#body_index {
+    font-family: system-ui;
+    background: #f06d06;
+    color: white;
+    text-align: center;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+#nav_bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#nav_bar a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    display: block;
+    padding: 12px 26px;
+    font-family: "Oswald";
+    font-size: 18px;
+}
+
+#nav_bar {
+    background: rgba(0,0,0,1);
     width: 100%;
     height: 50px;
-    box-shadow: 1px 10px 5px #000;
-    background: gray;
-}
-#nav_bar a{
-    padding: 20px 13px;
-    text-decoration-line: none;
-    color: #ffffff;
-    
-   
-    
-    
 }
 
-#nav_bar a:hover{
-    background:blue;
+.barra {
+    color:rgba(153,153,153,1);
+    padding: 15px 0 0 0;
 }
 
-#Registerbutton {
-    width:50px ;
+#nav_bar a:hover {
+    color:rgb(12, 221, 248);
+    background:rgba(0,0,0,0.2);
+    animation:ls ms 1;
+}
+@keyframes ms {
+    0%{
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}
+
+#content {
+    text-align: left;
+    text-align: justify;
+}
+
+
+
+#Registerbutton button {
+    background: #f06d06;
+    width: 50px;
     height: 30px;
-    border-bottom: 0mm;
 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    line-height: 50%;
+    display: block;
+    padding: 3px 6px;
+    font-family: "Oswald";
+    font-size: 6px;
+    margin-top: -40px;
+    position: absolute;
+    right: 30px;
+    border-radius: 30%;
 }
 
-#Registerbutton:hover{
-    background:blue;
-    color: #ffffff;
+#Registerbutton button:hover {
+    color:rgb(0, 0, 0);
+    background:rgb(12, 221, 248);
+    animation:ls ms 1;
 }
+
+@keyframes ms {
+    0%{
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}
+
+
 
 #formRegistro {
-    width: 100px;
     height: 200px;
+    width: 100px;
+    margin: 0 auto;
 }
 
-#formRegistro p input{
-    border-color: green;
+#formRegistro label input {
+    border: solid green;
+}
 
+#body_registro {
+    background-color: #f06d06;
+    margin: auto;
+}
+
+fieldset {
+    background-color: white;
 }
